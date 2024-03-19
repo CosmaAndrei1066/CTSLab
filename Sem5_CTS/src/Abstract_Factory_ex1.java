@@ -84,6 +84,12 @@ public class Abstract_Factory_ex1 {
 		FurnitureFactory victorianFactory = new VictorianFurnitureFactory();
 		
 		System.out.println("ClientUses modern furniture");
+		Client client1 = new Client(modernFactory);
+		client1.useFurniture();
+		
+		System.out.println("ClientUses victorian furniture");
+		Client client2 = new Client(victorianFactory);
+		client2.useFurniture();
 
 	}
 
